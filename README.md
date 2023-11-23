@@ -117,3 +117,73 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 
 ## Answers
 Please write your answers here
+What is XV6?
+
+b. A Unix-like operating system
+XV6 is based on which earlier operating system?
+
+c. BSD
+Which file system is used in XV6?
+
+d. simple
+How are system calls implemented in XV6?
+
+b. As interrupts
+In XV6, what is the maximum number of processes that can run simultaneously?
+
+c. 512
+What is the name of the shell used in XV6?
+
+c. Sh
+How does XV6 handle process scheduling?
+
+a. Round-robin scheduling
+Which memory management technique is used in XV6?
+
+a. Paging
+How are interrupts handled in XV6?
+
+d. Both b and c
+Does XV6 support multithreading?
+
+b. No
+Bonus Question:
+
+Who developed XV6?
+c. MIT
+Theoretical Questions:
+
+Process States:
+
+In XV6, a process can be in one of the following states:
+Running: The process is currently executing.
+Sleeping: The process is waiting for some event to occur.
+Runnable: The process is ready to run but is waiting for the CPU.
+Zombie: The process has finished executing but hasn't been completely cleaned up yet.
+File System Structure:
+
+The XV6 file system has a hierarchical structure with key components such as inodes, directories, and data blocks. Inodes store metadata about files, directories maintain lists of filenames and corresponding inode numbers, and data blocks contain the actual file data.
+System Calls vs. Library Functions:
+
+System calls are requests for the operating system to perform privileged operations, while library functions are higher-level functions provided by libraries. System calls involve a transition to kernel mode, and examples in XV6 include fork and exec. Library functions, like those in the C standard library, don't involve this transition.
+Memory Paging:
+
+Memory paging in XV6 involves dividing physical memory into fixed-size pages. It provides benefits such as efficient use of memory, ease of implementing virtual memory, and simplification of memory allocation.
+Shell Commands:
+
+Examples of essential shell commands in XV6 include:
+ls: List files in a directory.
+cd: Change the current working directory.
+cp: Copy files or directories.
+Process Synchronization:
+
+Process synchronization in XV6 is crucial for ensuring that multiple processes can safely access shared resources. Mechanisms like locks and semaphores are used to coordinate access and prevent race conditions.
+Interrupt Handling:
+
+Interrupts play a vital role in XV6 by allowing the operating system to respond to events such as hardware signals or requests for specific services. Interrupt handling involves interrupt service routines (ISRs) to handle these events.
+Virtual Memory:
+
+Virtual memory in XV6 allows processes to use more memory than physically available. It involves a memory management unit (MMU) and provides benefits such as process isolation, ease of memory management, and efficient use of resources.
+Boot Process:
+
+The XV6 boot process involves the BIOS loading the boot sector from the disk into memory, which contains the XV6 bootloader. The bootloader then loads the XV6 kernel into memory, and the control is transferred to the kernel, initiating the operating system's startup.
